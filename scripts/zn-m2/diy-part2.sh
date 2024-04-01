@@ -14,9 +14,10 @@
 ./scripts/feeds install -a -f -p passwall
 
 rm -rf ./feeds/packages/net/qBittorrent-Enhanced-Edition
-git clone https://github.com/KryptonLee/qBittorrent-openwrt-package.git ./package/qBittorrent
-cd ./package/qBittorrent
-git checkout v4.4.1-openwrt-19.07
+rm -rf ./feeds/luci/applications/luci-app-qbittorrent
+
+git clone https://github.com/sbwml/luci-app-qbittorrent.git -b 4.4.5 ./package/qBittorrent
+
 
 
 
