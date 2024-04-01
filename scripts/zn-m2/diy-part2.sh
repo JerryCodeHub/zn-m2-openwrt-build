@@ -13,6 +13,11 @@
 ./scripts/feeds install -a -f -p passwall_packages
 ./scripts/feeds install -a -f -p passwall
 
+rm -rf ./feeds/packages/net/qBittorrent-Enhanced-Edition
+git clone https://github.com/KryptonLee/qBittorrent-openwrt-package.git ./package/qBittorrent
+cd ./package/qBittorrent
+git checkout v4.4.1-openwrt-19.07
+
 
 
 
